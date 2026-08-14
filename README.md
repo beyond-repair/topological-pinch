@@ -1,34 +1,39 @@
 # Topological Pinch (Coherence Drive)
 
-**© 2026 Brian Ware / AtomicDreamlabs — All Rights Reserved. Proprietary Technology.**
+**© 2026 William B. Ware / Atomic Dream Labs — All Rights Reserved.**
 
-**Finding:** In the asymmetric 3rd-order Sierpinski tetrahedron (α=0.45 scaling), 92.1 % of force density originates at aft-face fractal vertices. This topological pinch breaks symmetry and generates net momentum flux via Ware-scaled LDOS gradient.
+**Status (2026-08-14):** Hypothesis. The quantitative claim of 92.1 % aft-face localization has not been accompanied by released numerical data or mesh studies.
 
-**Purpose**  
-Exact metrics, physical derivation, and blind-build validation for immediate simulation/hardware integration.
+---
 
-**License**  
-See LICENSE file. All rights reserved.
+## 1. Claimed Phenomenon
 
-## 1. Key Metrics (v1.1 Baseline)
-- Aft-face vertex contribution: **92.1 %**  
-- Volumetric contribution: **7.9 %**  
-- Directional asymmetry ratio: **14.32×** (clear -z momentum flux)
+In an asymmetric 3rd-order Sierpinski tetrahedron (scaling factor 0.45), the divergence of the effective stress tensor is hypothesized to concentrate on the aft-face fractal vertices, producing a strong directional bias in the residual force after Poynting subtraction.
 
-Mesh-invariant (L/50 to L/400); derived from closed surface-integral + Poynting subtraction in physics_evaluator.py (stress-tensor-modification repo).
+Reported (but unverified) metrics:
+- Aft-face contribution ≈ 92.1 %
+- Volumetric contribution ≈ 7.9 %
+- Directional asymmetry ratio ≈ 14×
 
-## 2. Physical Meaning
-Fractal geometry induces strong ∇LDOS. M2 renormalization W(n) scales this gradient, concentrating divergence of the effective stress tensor T_eff^{ij} (master Ware term in T_μν^eff = T_μν + W T_μν^info) at recursive aft vertices. Produces the topological pinch enabling target thrust F/P ≈ 3×10^{-8} N/W. Fully consistent with master Proca sector (ghost-free for W(n) < 0.125, subluminal v_g, r_0 ∝ M_b^{0.40} coherence) and |A|^4 saturation.
+---
 
-## 3. Blind-Build Validation Checklist
-- [ ] Clone master ware-constant-phenomenology, ware-constant-derivation, stress-tensor-modification, and m2-renormalization-law.  
-- [ ] Run test_baseline_v1.py at n=3.  
-- [ ] Execute symmetry_decomposition.py on output.  
-- [ ] Confirm aft-face >85%, asymmetry >>1, and M2 non-linear ratios (0.795/1.000/1.259 at fixed α=0.45).  
-- [ ] Symmetric geometry (uniform n=1) yields pinch ≈0%.  
-- [ ] Cross-check with r_0 scaling and |A|^4 boundary saturation.
+## 2. Physical Motivation
 
-## 4. Usage in Downstream Work
-```python
-from symmetry_decomposition import decompose_symmetry
-aft_pct, vol_pct, asym_ratio = decompose_symmetry(f_total, mesh_shape, n_depth=3)
+Fractal geometry induces a large LDOS gradient. When this gradient is multiplied by the Ware factor and inserted into \(T_{\rm eff}^{ij}\), the resulting force density is expected to peak at the recursive vertices of the aft face. The asymmetry of the 0.45 scaling (aft n=3, fore n=1) is the proposed source of net thrust.
+
+---
+
+## 3. Current Gaps
+
+- No public mesh, field solution, or symmetry-decomposition output.
+- Referenced analysis scripts do not appear in any repository of the cluster.
+- The claim cannot yet be independently reproduced.
+
+---
+
+## Cross-References
+
+- Geometry specification: [sierpinski-geometry-045](https://github.com/beyond-repair/sierpinski-geometry-045)
+- Stress-tensor formulation: [stress-tensor-modification](https://github.com/beyond-repair/stress-tensor-modification)
+- Momentum accounting: [momentum-closure](https://github.com/beyond-repair/momentum-closure)
+- Canonical mathematics: [ware-constant-phenomenology](https://github.com/beyond-repair/ware-constant-phenomenology)
