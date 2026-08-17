@@ -1,7 +1,8 @@
-# Topological Pinch
+# Topological Pinch (Hypothesis)
 
-**Status (2026-08-14):** Hypothesis. The 92.1% aft-face localization is **not** verified by public mesh data.
+**Status (2026-08-17):** Unverified. README-only.
 
-BEM/EFIE solvers in stress-tensor-modification show directional stability under aft-face refinement but do not confirm the 92% figure.
+The claim that ~92% of stress divergence localizes on the aft face is **not** confirmed by public mesh metrics in this or sibling repos.
 
-Cross-ref: [stress-tensor-modification](https://github.com/beyond-repair/stress-tensor-modification), [sierpinski-geometry-045](https://github.com/beyond-repair/sierpinski-geometry-045)
+BEM/EFIE directionality studies: [stress-tensor-modification](https://github.com/beyond-repair/stress-tensor-modification)  
+Geometry: [sierpinski-geometry-045](https://github.com/beyond-repair/sierpinski-geometry-045)
