@@ -34,8 +34,11 @@ That idea is called **topological pinch**. It is a **hypothesis**, not a certifi
 
 **Public status:** README-level hypothesis. The ~92% figure is **not** confirmed by public mesh metrics in this or sibling repos.
 
+Docs-presence CI (Sweep-096) only checks that claim-cap files exist. Green CI is not experimental validation.
+
 ## Related
 
 - Geometry: [sierpinski-geometry-045](https://github.com/beyond-repair/sierpinski-geometry-045)  
 - Solvers: [stress-tensor-modification](https://github.com/beyond-repair/stress-tensor-modification)  
-- Theory freeze: [coherence-drive](https://github.com/beyond-repair/coherence-drive)
+- Theory freeze: [coherence-drive](https://github.com/beyond-repair/coherence-drive)  
+- Governance: [GOVERNANCE.md](GOVERNANCE.md)
