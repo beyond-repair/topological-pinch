@@ -8,3 +8,4 @@
 | Claim level | **0–1** |
 | Note | “92% aft-face” is **unverified** |
 | Experimental validation | **false** |
+| Sweep-105 | Re-audit; classification unchanged |

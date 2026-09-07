@@ -34,7 +34,9 @@ That idea is called **topological pinch**. It is a **hypothesis**, not a certifi
 
 **Public status:** README-level hypothesis. The ~92% figure is **not** confirmed by public mesh metrics in this or sibling repos.
 
-Docs-presence CI (Sweep-096) only checks that claim-cap files exist. Green CI is not experimental validation.
+Docs-presence CI only checks that claim-cap files exist. Green CI is not experimental validation.
+
+Sweep-105 (2026-09-07): re-audit; classification remains RESEARCH.
 
 ## Related
 
