@@ -1,11 +1,12 @@
-# Claim status
+# Claim status — topological-pinch
 
-**Master index:** [coherence-drive](https://github.com/beyond-repair/coherence-drive)
+**Classification:** RESEARCH / hypothesis  
+**Status:** Unverified.  
+**experimental_validation:** false  
+**Historical 92% localization:** HYPOTHESIS — not reproduced
 
-| Field | Value |
-|-------|--------|
-| Classification | RESEARCH |
-| Claim level | **0–1** |
-| Note | “92% aft-face” is **unverified** |
-| Experimental validation | **false** |
-| Sweep-105 | Re-audit; classification unchanged |
+A graph-proxy metric exists (`localization.py`). On the public gasket
+with Voronoi-of-corner regions and residual current Lu, the measured
+eta is **not** 0.92. That number remains boxed as a hypothesis
+until a mesh-refined Maxwell-stress integral, with the region declared
+in advance, says otherwise.
