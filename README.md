@@ -5,7 +5,7 @@
 ### Hypothesis: asymmetry **localizes** stress divergence — not a measured 92%
 
 [![RESEARCH](https://img.shields.io/badge/classification-RESEARCH-f59e0b?style=for-the-badge)](https://github.com/beyond-repair/ADL-Governance)
-[![Claim](https://img.shields.io/badge/claim_0–1_hypothesis-7c3aed?style=for-the-badge)](https://github.com/beyond-repair/ADL-Governance)
+[![Claim](https://img.shields.io/badge/claim_0%E2%80%931_hypothesis-7c3aed?style=for-the-badge)](https://github.com/beyond-repair/ADL-Governance)
 
 </div>
 
@@ -34,9 +34,11 @@ That idea is called **topological pinch**. It is a **hypothesis**, not a certifi
 
 **Public status:** README-level hypothesis. The ~92% figure is **not** confirmed by public mesh metrics in this or sibling repos.
 
-Docs-presence CI only checks that claim-cap files exist. Green CI is not experimental validation.
+The in-repo metric is a gasket-graph residual proxy (`localization.py`). Sweep-172 re-ran it locally: default boundary, levels 2–4, Voronoi corners partition as 0.5 / 0.4 / 0.1. That is not 0.92 and is not a Maxwell-stress integral.
 
-Sweep-105 (2026-09-07): re-audit; classification remains RESEARCH.
+CI runs pytest (docs presence + proxy). Green CI is not experimental validation.
+
+Sweep-172 (2026-10-01): re-audit; classification remains RESEARCH.
 
 ## Related
 
