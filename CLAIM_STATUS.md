@@ -31,3 +31,10 @@ aft-face localization, thrust, or any continuum stress integral.
 is a high-frequency graph fact. It is **not** a measurement of
 \(\eta_{\rm region}=0.92\) and SHALL NOT be substituted for the pinch
 hypothesis.
+
+**2026-10-01 pinch-family addendum:** a Neumann neck collapses
+\(\lambda_1\) as width drops. That is spectral, not a topological mouth,
+and it does not select 0.08. The gap ratio crosses 0.08 only as a
+geometry-dependent level set. Record:
+`FALSIFICATION_2026-10-01_PINCH.md`. Status remains unverified.
+experimental_validation remains false.

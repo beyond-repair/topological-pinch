@@ -23,6 +23,7 @@ That idea is called **topological pinch**. It is a **hypothesis**, not a certifi
 |-----------|-----------|
 | The *narrative* of aft-face localization | Yes — as hypothesis |
 | A number like “92.1% proven” | **No** — not confirmed here |
+| A universal 0.08 from a narrowing neck | **No** — see 2026-10-01 falsification |
 | Geometry + BEM directionality | Sibling repos below |
 
 ## How it works (intended story)
@@ -40,9 +41,12 @@ CI runs pytest (docs presence + proxy). Green CI is not experimental validation.
 
 Sweep-172 (2026-10-01): re-audit; classification remains RESEARCH.
 
+2026-10-01 operator test: Neumann spectral collapse under a narrowing neck is real and does not select 0.08. A gap-ratio crossing of 0.08 is a level set, not a fixed point. Record: [FALSIFICATION_2026-10-01_PINCH.md](FALSIFICATION_2026-10-01_PINCH.md).
+
 ## Related
 
 - Geometry: [sierpinski-geometry-045](https://github.com/beyond-repair/sierpinski-geometry-045)  
 - Solvers: [stress-tensor-modification](https://github.com/beyond-repair/stress-tensor-modification)  
 - Theory freeze: [coherence-drive](https://github.com/beyond-repair/coherence-drive)  
+- Derivation ledger: [-ware-constant-derivation](https://github.com/beyond-repair/-ware-constant-derivation)  
 - Governance: [GOVERNANCE.md](GOVERNANCE.md)
