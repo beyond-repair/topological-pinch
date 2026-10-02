@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "topological-pinch"
+version = "0.1.0"
+description = "Claim-0 gasket-graph residual localization proxy. Does not reproduce 92% or measure thrust."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "All Rights Reserved" }
+authors = [{ name = "Brian Ware" }]
+dependencies = [
+  "numpy>=1.25,<3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[project.scripts]
+topological-pinch = "localization:main"
+
+[tool.setuptools]
+py-modules = ["localization", "report"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

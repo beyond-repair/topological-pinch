@@ -1,7 +1,7 @@
 # Claim status — topological-pinch
 
 **Classification:** RESEARCH / hypothesis  
-**Status:** Unverified.  
+**Status:** RUNNABLE SKETCH — NOT A COMPLETE PRODUCT (Claim-0). Unverified as physics.  
 **experimental_validation:** false  
 **Historical 92% localization:** HYPOTHESIS — not reproduced
 
@@ -21,8 +21,18 @@ returned the same partition
 | 1 | 0.4 | false |
 | 2 | 0.1 | false |
 
-Local `pytest`: 5 passed, 0 failed (2026-10-01). This does not validate
-aft-face localization, thrust, or any continuum stress integral.
+The same partition holds at levels 0–5, not only 2–4. Corner 0
+eta=0.500000 is short of 0.92 by 0.420000; corners 1 and 2 are short by
+0.520000 and 0.820000. `r = L u` is nonzero only on the three Dirichlet
+corners (the interior is graph-harmonic), so interior Voronoi labels do
+not move eta. Level-0 corner residual is `[2.5, -2.0, -0.5]`; on this
+boundary each deeper level multiplies it by 3/5. That scale is not 0.08
+and not 0.92. Nothing was refit.
+
+Stranger path: `pip install -r requirements.txt && pip install -e .`, then
+`topological-pinch` / `python report.py` / `python -m localization` / `pytest -q`.
+This does not validate aft-face localization, thrust, or any continuum
+stress integral.
 
 **Sweep-159d note:** localized multiplicity of combinatorial eigenvalue
 \(\lambda=6\) on the gasket

@@ -1,7 +1,4 @@
-from pathlib import Path
-import sys
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from localization import corner_voronoi_eta
+from localization import corner_voronoi_eta, locks_hold, report_rows
 
 
 def test_eta_is_a_fraction_and_not_the_historical_92():
@@ -24,3 +21,9 @@ def test_default_boundary_partition_is_stable_and_not_92():
             r = corner_voronoi_eta(level, region_corner=corner)
             assert abs(r.eta - eta) < 1e-12
             assert r.historical_92_reproduced is False
+
+
+def test_report_locks_hold():
+    rows = report_rows()
+    assert locks_hold(rows)
+    assert all(row["historical_92"] == [False, False, False] for row in rows)
